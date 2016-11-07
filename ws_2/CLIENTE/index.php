@@ -41,7 +41,7 @@
 		require_once('../lib/nusoap.php');
 
 //2.- INDICAMOS URL DEL WEB SERVICE
-		$host = 'http://localhost:8080/clase11/ws_1/SERVIDOR/testWS.php';
+		$host = 'http://localhost:8080/clase11/ws_2/SERVIDOR/testWS.php';
 		
 //3.- CREAMOS LA INSTANCIA COMO CLIENTE
 		$client = new nusoap_client($host . '?wsdl');
