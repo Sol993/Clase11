@@ -38,7 +38,7 @@
 
 		require_once('../lib/nusoap.php');
 
-		$host = 'http://localhost/Ejemplos/2016/clase11/ws_3/SERVIDOR/testWS.php';
+		$host = 'http://localhost:8080/clase11/ws_3/SERVIDOR/testWS.php';
 		
 		$client = new nusoap_client($host . '?wsdl');
 		
