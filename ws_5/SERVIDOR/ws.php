@@ -20,7 +20,7 @@
 					);
 
 
-	function ObtenerTodosLosCds() {
+	function ObtenerTodosLosCds() {//FUNCION QUE SE USA EN INDEX.PHP
 		
 		return Cd::TraerTodos();
 	}

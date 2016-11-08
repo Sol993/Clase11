@@ -14,7 +14,7 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!--<link rel="stylesheet" type="text/css" href="estilo.css">-->
 
 </head>
 <body>
@@ -30,7 +30,8 @@
 		require_once('AccesoDatos.php');
 		require_once('Cd.php');
 
-		$host = 'http://localhost:8080/clase11/ws_5/SERVIDORR/ws.php';//http://localhost/Ejemplos/2016/clase11/ws_5/SERVIDOR/ws.php
+		$host = 'http://localhost:8080/clase11/ws_5/SERVIDOR/ws.php';
+		
 		
 		$client = new nusoap_client($host . '?wsdl');
 
@@ -41,8 +42,8 @@
 		}
 
 //INVOCO AL METODO DE MI WS		
-		$cds = $client->call('ObtenerTodosLosCds', array());
-
+		$cds = $client->call('ObtenerTodosLosCds', array()); //
+ ///var_dump($cds);
 		if ($client->fault) {
 			echo '<h2>ERROR AL INVOCAR METODO:</h2><pre>';
 			print_r($cds);
