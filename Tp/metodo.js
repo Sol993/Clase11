@@ -3,7 +3,7 @@ function Mostar()
 	alert("siempre");
 	$.ajax({
         type: 'POST',
-        url: "./nexo.php",
+        url: "nexo.php",
         dataType: "json",
         data: {
 			queHago : "mostrarLoginSession",

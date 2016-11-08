@@ -3,7 +3,7 @@ $queHago=$_POST['queHago'];
 
 switch ($queHago) {
 	case 'mostrarLoginSession':
-			echo "llego";
+			echo "Llego";
 		break;
 }
 
